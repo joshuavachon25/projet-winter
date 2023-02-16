@@ -1,0 +1,171 @@
+---
+import Accueil from '../../layouts/Accueil.astro';
+---
+
+<Accueil title="Projet-Winter - Choisissez votre édition">
+  <a href="/2020" class="btn-change-edition">Retour au menu</a>
+	<main class="w-full min-h-screen ">
+    <header class="w-full h-screen"></header>
+    <aside>
+      <h3 class="text-2xl font-bold text-yellow-100 uppercase">Édition 2020</h3>
+      <h1 class="text-9xl font-bold text-yellow-50 uppercase">Winter</h1>
+      <div class="bg-white bg-opacity-60 p-10 w-1/2 text-justify flex flex-col gap-4 mt-10 rounded-md shadow-2xl">
+        <p>Le Projet Winter est issu d'une école d'été organisée conjointement entre le Département d'histoire de l'Université de Sherbrooke et le programme Histoire et civilisation du Cégep de Sherbrooke.</p>
+        <p>Durant une semaine de cours intensive, dix étudiant.e.s de l'université et huit étudiant.e.s du collégial ont travaillé de concert pour mettre en lumière l'histoire de la prison Winter.</p>
+        <p>En dépouillant les registres d'écrou de la prison, les rapports de la police sherbrookoise et la presse locale, ils ont exploré plusieurs facettes de cette histoire: la prise en charge de la criminalité féminine, la médiatisation des crimes graves, les divergences entre le crime urbain et rural, ainsi que le monde du personnel de la prison.</p>
+        <p>Les données publiées ici sont les résultats acquis par cette recherche en archives.</p>
+        <p>Elles sont une incursion unique dans l'univers carcéral et nous laissent voir Sherbrooke derrière les barreaux.</p>
+      </div>
+      <div class="grid grid-cols-8 bg-white items-center justify-center gap-10 p-10 mt-10 rounded-md">
+        <img src="/assets/logo/banq.png" alt="">
+        <img src="/assets/logo/cegep.png" alt="">
+        <img src="/assets/logo/hm.png" alt="">
+        <img src="/assets/logo/mhist.png" alt="">
+        <img src="/assets/logo/prese.jpg" alt="">
+        <img src="/assets/logo/seminaire.png" alt="">
+        <img src="/assets/logo/sauvegarde.png" alt="">
+        <img src="/assets/logo/uds.png" alt="">
+      </div>
+      <div class="bg-white bg-opacity-60 p-10 w-1/2 flex flex-col gap-4 mt-10 rounded-md shadow-2xl  text-center">
+        <h2 class="text-2xl font-bold">Participants et participantes</h2>
+        <h4 class="text-xl font-bold">Personnel enseignant</h4>
+        <ul>
+          <li>Sophie Abdela</li>
+          <li>Caroline Desruisseaux</li>
+          <li>Frédéric Moisan</li>
+        </ul>
+<h4 class="text-xl font-bold">Assistants</h4>
+<ul>
+  <li>Antoine Gauthier-Trépanier</li>
+  <li>Joshua L.J. Vachon</li>
+</ul>
+
+<h4 class="text-xl font-bold">Infrastructures numériques</h4>
+<ul>
+  <li>Joshua L.J. Vachon</li>
+</ul>
+
+<h4 class="text-xl font-bold">Équipe UdeS</h4>
+<ul>
+  <li>Émélie Beaulieu</li>
+  <li>Henri Dion</li>
+  <li>Charles-Étienne Gosselin</li>
+  <li>Maude Goulet-Ménard</li>
+  <li>William Laguë</li>
+  <li>Claudia Larin</li>
+  <li>Joanie Lavoie</li>
+  <li>Thomas Lévesque</li>
+  <li>Raphaël Marois</li>
+  <li>Alexandra Vouligny</li>
+</ul>
+
+<h4 class="text-xl font-bold">Équipe CdS</h4>
+<ul>
+  <li>Charlotte Arguin</li>
+  <li>Roxane Bertrand</li>
+  <li>Jasmine Boudreault</li>
+  <li>Gabriel Couture-Ainsley</li>
+  <li>Océane Gagnon</li>
+  <li>Maxime Lachance</li>
+  <li>Alexane Raymond</li>
+  <li>Julien Vézina</li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+    </aside>
+  </main>
+  <a href="/2022" class="btn-info">Voir l'édition 2022</a>
+</Accueil>
+
+<style>
+body{
+  overflow-y: scroll;
+  overflow-y: overlay;
+}
+
+ main{
+  background: rgba(19,17,24,1);
+  position: fixed;
+  overflow-x: hidden;
+ }
+
+  header{
+    background-image: url('/assets/bg1.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: fixed;
+    position: fixed;
+    filter: opacity(0.05); 
+  }
+
+  aside{
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: min-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 9%;
+  }
+
+  .btn-theme{
+    width: 20%;
+    text-align: center;
+    margin-bottom: 10px;
+    padding: 10px 40px;
+    border-radius: 3px;
+    font-weight: 500;
+    border: 2px solid rgb(254 252 232);
+    color: rgb(254 252 232);
+    transition: 1s;
+  }
+
+  .btn-info{
+    position: absolute;
+    right: 30px;
+    top:10px;
+    text-align: center;
+    margin-bottom: 10px;
+    padding: 5px 20px;
+    border-radius: 3px;
+    font-weight: 500;
+    border: 2px solid rgb(254 252 232);
+    color: rgb(254 252 232);
+    transition: 1s;
+  }
+
+  .btn-change-edition{
+    position:absolute;
+    left: 10px;
+    top:10px;
+    text-align: center;
+    margin-bottom: 10px;
+    padding: 5px 20px;
+    border-radius: 3px;
+    font-weight: 500;
+    border: 2px solid rgb(254 252 232);
+    color: rgb(254 252 232);
+    transition: 1s;
+    z-index:999;
+  }
+
+  .btn-theme:hover, .btn-info:hover, .btn-change-edition:hover{
+    background: rgb(254 252 232);
+    color: rgba(19,17,24,1);
+  }
+  
+</style>

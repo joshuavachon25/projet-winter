@@ -1,0 +1,47 @@
+---
+const {description, chapitres} = Astro.props
+---
+
+<div class="px-10 py-5 pb-8 text-justify text-white bg-black">
+  <h4 class="text-white">Autres sections de la thématique</h4>
+  <p>{description}</p>
+  <div class="grid grid-cols-2 gap-2">
+    {chapitres.map((chapitre) => (
+      <a href={chapitre.current ? '#' : chapitre.url} class={chapitre.current ? 'btn-current' : 'btn-info'}>
+        {chapitre.label}
+      </a>
+    ))}
+  </div>
+</div>
+
+<style>
+    .btn-info{
+      font-size: 20px;
+      text-align: center;
+      margin-bottom: 10px;
+      padding: 20px 20px;
+      text-decoration: none;
+      border-radius: 3px;
+      font-weight: 500;
+      border: 2px solid rgb(254 252 232);
+      color: rgb(254 252 232);
+      transition: 1s;
+  }
+  .btn-info:hover{
+    background: rgb(254 252 232);
+    color: rgba(19,17,24,1);
+  }
+
+  .btn-current{
+    cursor: default;
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 10px;
+    padding: 20px 20px;
+    text-decoration: none;
+    border-radius: 3px;
+    font-weight: 500;
+    background: rgb(254 252 232);
+    color: rgba(19,17,24,1);
+  }
+</style>

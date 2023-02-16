@@ -1,0 +1,78 @@
+---
+layout: ../../layouts/Article.astro
+title: 'Urbanité et maintien de l’ordre, Sherbrooke (1885-1920)'
+---
+import Header from '../../components/Header.astro';
+import Chapeau from '../../components/Chapeau.astro';
+import Cols3 from '../../components/Cols3.astro';
+import Text from '../../components/Text.astro';
+import Chapitres from '../../components/Chapitres.astro';
+import UrbaniteMaintienOrdre from '../../tableaux/UrbaniteMaintienOrdre.astro';
+
+<Header titre="Urbanité et maintien de l’ordre, Sherbrooke (1885-1920)" image="/assets/img/5514994.jpg"/>
+
+<Text>
+<h3>Une ville en expansion...</h3>
+Il y a certainement une relation entre la croissance urbaine et la criminalité. À Sherbrooke, l’important développement industriel attire un grand nombre d’individus. Cela entraîne une croissance démographique considérable : la ville passe d’environ 8 000 habitants en 1885 à près de 20 000 vers 1920[1]. 
+</Text>
+<a href="/assets/img/Kesteman_1983_p16.jpg" target="_blank"><img src="/assets/img/Kesteman_1983_p16.jpg" alt="Croissance démographique de Sherbrooke." title="(1) Croissance démographique de Sherbrooke." class="mx-auto"/></a>
+<Text>
+Arrimée au besoin en logements, la superficie de la ville, qui se limitait à 5,4 km2 en 1893, va plus que doubler et atteindre 12,41 km2 en 1920 (voir Carte 1 pour plus de détails)[2]. En 1911, le secteur manufacturier emploie 32 % des salariés de Sherbrooke contre 22 % dans le reste de la province, ce qui renforce l’aspect ouvrier de la population urbaine[3].
+</Text>
+<h4 class="px-20 -mb-5">Carte 1 : Expansion du territoire urbanisé de la Ville de Sherbrooke (1881-1917)</h4>
+<a href="/assets/img/terrUrbainSher1881-19017-2048x1448.png" target="_blank"><img src="/assets/img/terrUrbainSher1881-19017-2048x1448.png" alt="Carte 1 : Expansion du territoire urbanisé de la Ville de Sherbrooke (1881-1917)" title="Carte 1 : Expansion du territoire urbanisé de la Ville de Sherbrooke (1881-1917)" class="mx-auto"/></a>
+<Text>
+Suivant cette urbanisation importante, il semble logique que la police ait davantage d’arrestations à effectuer, un phénomène qui apparaît clairement dans nos données (voir Graphique 1 ci-dessous). À titre indicatif, cette hausse se chiffre à près de 37 % lorsque l’on compare les données compilées pour les années 1890 et 1920[4].
+</Text>
+<h4 class="px-20 ">Graphique 1 : Nombre d'arrestations selon la période (1885, 1890, 1915 et 1920)</h4>
+<div class="flourish-embed flourish-chart" data-src="visualisation/3470838">
+  <script src="https://public.flourish.studio/resources/embed.js"></script>
+</div>
+<Text>
+Cependant, alors que l’on pourrait aussi s'attendre à ce que l’action des policiers s’étende aux nouveaux espaces urbains, nos données semblent plutôt indiquer que, bien qu’ils interviennent dans un rayon un peu plus grand, l’essentiel de leurs opérations demeure limité au centre-ville, soit les quartiers Wellington et Market. Cette concentration est visible à l'aide de la Carte 2 présentée ci-bas.
+</Text>
+<h4 class="px-20 ">Carte 2 : Répartition spatiale des arrestations (1885, 1890, 1915 et 1920) </h4>
+<UrbaniteMaintienOrdre/>
+<Text>
+Il serait donc pertinent de s’interroger sur les raisons qui limitent l’action des policiers à cette zone, possiblement les moyens de transport des officiers, les secteurs de la ville qui «génèrent» la criminalité ou encore ceux que la police choisit de réguler davantage.
+</Text>
+
+<Chapitres 
+  description=""
+  chapitres={
+    [
+      {label: "Criminalité urbaine - Présentation", url: "/2020/criminalite-urbaine-1"},
+      {label: "Criminel type", url: "/2020/criminalite-urbaine-2"},
+      {label: "Police de Sherbrooke", url: "/2020/criminalite-urbaine-3"},
+      {label: "La station du dépôt", url: "/2020/criminalite-urbaine-4"},
+      {label: "Urbanisation et criminalité", url: "/2020/criminalite-urbaine-5", current: true}
+    ]
+  }
+/>
+
+<div class="p-24 py-12 text-sm bg-gray-400">
+  <h3>Médiagraphie</h3>
+<h4>Références</h4>
+[1] Jean-Pierre Kesteman, « La Condition urbaine vue sous l’angle de la conjoncture économique: Sherbrooke, 1875 à 1914 », Urban History Review, vol. 12, n° 1, juin 1983, p. 16‑18.
+
+[2] Jean-Pierre Kesteman, Histoire de Sherbrooke Tome 2 : De l’âge de la vapeur à l’ère de l’électricité (1867-1896), Sherbrooke, Québec, GGC Éditions, 2001, p. 200.
+
+[3] Jean-Pierre Kesteman, « La Condition urbaine vue sous l’angle de la conjoncture économique: Sherbrooke, 1875 à 1914 - ProQuest », art. cit., p. 13.
+
+[4] Les deux années dont nous disposions des quatre mois et que nous avons pu dépouiller en entier.
+
+<h4>Images</h4>
+1. Jean-Pierre Kesteman, « La Condition urbaine vue sous l’angle de la conjoncture économique: Sherbrooke, 1875 à 1914 », Urban History Review, vol. 12, n° 1, juin 1983, p. 16.
+
+2. Jas. R. Woodward, Sherbrooke Illustrated, Sherbrooke, W.A. Morehouse & Co., 1898, p. 13. (Entête)
+
+3. Jas. R. Woodward, Sherbrooke Illustrated, Sherbrooke, W.A. Morehouse & Co., 1898, p. 9.
+
+<h4>Pour aller plus loin</h4>
+KESTEMAN, Jean-Pierre. « La Condition urbaine vue sous l’angle de la conjoncture économique: Sherbrooke, 1875 à 1914 ». Urban History Review, vol. 12, n° 1, juin 1983, p. 11‑28.
+
+KESTEMAN, Jean-Pierre. Histoire de Sherbrooke. Tome 2 : De l’âge de la vapeur à l’ère de l’électricité (1867-1896). Sherbrooke, Québec, GGC Éditions, 2001, coll. « Patrimoine », 280 p.
+
+KESTEMAN, Jean-Pierre. Histoire de Sherbrooke. Tome 3 : La ville de l’électricité et de tramway (1897-1929). Sherbrooke, Québec, GGC Éditions, 2002, coll. « Patrimoine », 292 p.
+
+</div>

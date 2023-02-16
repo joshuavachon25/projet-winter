@@ -1,0 +1,57 @@
+---
+layout: ../../layouts/Article.astro
+title: Le Service de Police de la ville de Sherbrooke
+---
+import Header from '../../components/Header.astro';
+import Chapeau from '../../components/Chapeau.astro';
+import Cols3 from '../../components/Cols3.astro';
+import Text from '../../components/Text.astro';
+import Chapitres from '../../components/Chapitres.astro';
+
+<Header titre="Le Service de Police de la ville de Sherbrooke" image="/assets/img/123dse32-32dsd23-34.png"/>
+
+<Text>
+
+ <div class="font-bold pt-5 text-gray-600">Au XIXe siècle, les policiers de la région se divisent en trois groupes distincts : la GRC, qui s'occupe de l'application des lois fédérales, la Sûreté du Québec, qui couvre les territoires ruraux, et la Police municipale, qui s'occupe de protéger la population des villes de plus de 5000 habitants, dont Sherbrooke.</div>
+
+  <img class="mx-auto w-96" src="/assets/img/123dse32-32dsd23-34.png" alt="Service de Police municipale et d'Incendies de la ville de Sherbrooke - Robert Davidson" title="Service de Police municipale et d'Incendies de la ville de Sherbrooke - Robert Davidson"/>
+
+La ville de Sherbrooke engage ses premiers policiers municipaux en 1872. À l'époque, la ville ne comptait seulement qu'un chef et deux constables. Par ailleurs, nous pouvons remarquer dans les « Day-Books » que ce sont toujours les mêmes officiers qui répondent à l'appel. Ce n'est qu'à partir du XXe siècle que le nombre de constables augmenta.
+
+Il est intéressant de noter que ces trois officiers étaient également les pompiers officiels de la ville, seulement, ils étaient accompagnés par plusieurs pompiers volontaires. Une cloche, installée dans la tour au centre de l'édifice de la Station de police, était sonnée lors d'incendies, et c'est à ce moment que les pompiers volontaires venaient en aide aux policiers-pompiers.
+
+Le travail des constables consistait à patrouiller à tour de rôle dans la ville, afin de préserver l'ordre. Puisqu'ils n'étaient que trois; un chef et deux constables, l'un travaillait de jour, l'autre de nuit, et le chef était en devoir 24h. Par ce fait, s'il était appelé lorsque son quart était terminé, il était dans son devoir de venir en aide. La plupart du temps, les officiers arrêtaient des hommes pour désordre public. De plus, les constables étaient responsables d'allumer les fanaux à l'huile, afin d'éclairer les rues du centre-ville notamment, et durant l'hiver, il était responsable de distribuer du bois de chauffage aux familles dans le besoin.
+
+Il serait intéressant de comparer les actions du Service de Police municipale de la ville de Sherbrooke avec celles d'une autre ville, d'un autre district. Le nombre d'officiers différerait-il ? Le travail de la police serait-il semblable ? Et le nombre d'arrestations?
+</Text>
+
+<div class="bg-black py-5">
+    <img class="mx-auto" src="/assets/img/xmx11.png" alt="Constable livrant du bois de chauffage aux plus démunis, pendant l'hiver" title="Constable livrant du bois de chauffage aux plus démunis, pendant l'hiver"/>
+    <p class="px-20 text-center text-gray-300 text-xs">Constable livrant du bois de chauffage aux plus démunis, pendant l'hiver</p>
+</div>
+<div class="py-5">
+  <h3 class="text-center">Les premiers chefs de la Police/Service des incendies de Sherbrooke</h3>
+  <Cols3 i1="/assets/img/xmx14.png" l1="Robert Davidson" d1="Robert Davidson est le premier chef de la Police municipale et du Service des Incendies de Sherbrooke. Il reste en service à ce poste 31 ans, soit de 1882 à 1913." i2="/assets/img/xmx13.png" l2="Joseph-Eusèbe Hébert" d2="Joseph-Eusèbe Hébert est le deuxième chef de la Police municipale et du Service des Incendies de la ville de Sherbrooke. Il reste en poste seulement 2 ans, de 1913 à 1915." i3="/assets/img/xmx12.png" l3="Alfred Couture" d3="Alfred Couture était d'abord sous-chef, puis chef de la Police municipale et du Service des Incendies de la ville de Sherbrooke, de 1915 à 1925, soit 10 ans, faisant de lui le troisième nommé pour ce poste."/>
+</div>
+<Chapitres 
+  description=""
+  chapitres={
+    [
+      {label: "Criminalité urbaine - Présentation", url: "/2020/criminalite-urbaine-1"},
+      {label: "Criminel type", url: "/2020/criminalite-urbaine-2"},
+      {label: "Police de Sherbrooke", url: "/2020/criminalite-urbaine-3", current: true},
+      {label: "La station du dépôt", url: "/2020/criminalite-urbaine-4"},
+      {label: "Urbanisation et criminalité", url: "/2020/criminalite-urbaine-5"}
+    ]
+  }
+/>
+
+<div class="p-24 py-12 text-sm bg-gray-400">
+  <h3>Médiagraphie</h3>
+<h4>Références</h4>
+[1]  KESTEMAN, Jean-Pierre. Histoire de Sherbrooke. Vol. 3 : La ville de l’électricité et du tramway (1897-1929). Sherbrooke, Éditions GGC, 2002, p. 180.
+
+[2] WOODWARD, Jas. R. Sherbrooke illustrated : containing a brief reference to its early settlement, and more fully to its admirable location, its unrivalled natural water power, its position as a great railway, mineral and agricultural centre, surrounded by a beautifully picturesque country. W.A. Morehouse and Co., 1898, p. 37.
+
+[3] BESSETTE, Gérard, et Lynda DURANT. Histoire judiciaire du district de Saint-François. Sherbrooke, G. Bessette, 1987, pages 279, 283, 298, 301-303
+</div>

@@ -1,0 +1,69 @@
+---
+layout: ../../layouts/Article.astro
+title: 'Crimes particuliers commis par des femmes'
+---
+import Header from '../../components/Header.astro';
+import Chapeau from '../../components/Chapeau.astro';
+import Cols3img from '../../components/Cols3img.astro';
+import Text from '../../components/Text.astro';
+import Chapitres from '../../components/Chapitres.astro';
+
+<Header titre="Crimes particuliers commis par des femmes" image="/assets/img/DSC_0006-rotated.jpg"/>
+
+<Text>
+  <blockquote>Les femmes reconnues coupables de crimes graves en Estrie au XIXe siècle sont plutôt rares. On recense seulement dix meurtres dans l’ensemble des registres de la prison Winter (1882-1915), en plus de quelques cas d'infanticides et d'incendies. Parmi ceux-ci se trouvent trois cas fortement médiatisés et particulièrement accessibles. Les voici...</blockquote>
+</Text>
+<Text>
+<h3>Léda Lamontagne</h3>
+<img src="/assets/img/ledan.jpg" class="w-48 mix-blend-multiply mx-auto"/>
+Le premier cas porte sur la complicité entre les soeurs et frères Léda et Rémi Lamontagne dans le meurtre de Napoléon Michel, son mari. Rémi aurait tué Napoléon en présence de cette dernière qui aurait mis le feu à sa maison pour effacer les traces de l’incident. Évidemment, Léda refuse systématiquement de répondre aux questions de l’enquêteur de peur d’être pendue et se retrouve par conséquent en prison pour plusieurs mois. Selon les conclusions de l’enquête, Rémi est reconnu coupable et Léda acquittée.
+</Text>
+<Cols3img
+    t="Extraits de journaux (cliquer pour voir)"
+    i1="/assets/img/lada.jpg" u1="/assets/img/lada.jpg" l1=""
+    i2="/assets/img/léda_lamontagne.png" u2="/assets/img/léda_lamontagne.png" l2=""
+    i3="/assets/img/lada_lamontagne.png" u3="/assets/img/lada_lamontagne.png" l3=""
+/>
+<Text>
+<h3>Bella Kerr</h3>
+Le second incident intéressant à apparaître dans les journaux est celui de Bella Kerr, une jeune fille de policier de 17 ans qui a mis le feu à la maison et à la ferme de son père. Sous prétexte qu’elle désirait retourner vivre dans la grande ville. La jeune femme plaide coupable et se retrouve en prison le 14 avril 1890.
+</Text>
+<Text>
+<h3>Mélissa Lothrop Ward</h3>
+Un autre article de journal s’intéresse aux crimes commis par Mélissa Lothrop (Ward), une femme de 39 ans teneuse de maison de pension ayant empoisonnée un de ses pensionnaires ainsi que son mari, le tout à un mois d’intervalle, soit en janvier et février 1884. Ward est emprisonnée à la prison Winter le 19 mars 1884 avant d’être jugée non coupable par un tribunal
+</Text>
+<div class="flex flex-row justify-center gap-10 items-center">
+  <img src="/assets/img/lotrhop1.jpg"/>
+  <img src="/assets/img/lothrop.jpg"/>
+</div>
+<Text>
+<h3>En conclusion...</h3>
+Nous pouvons ainsi remarquer que le traitement judiciaire réservé aux femmes est en somme différent de celui donné aux hommes. C'est-à-dire que la femme, vis-à-vis la justice, se retrouvait dans un monde qui n'était pas sien. Pour certains juges très conservateurs, les peines normatives ne sont pas acceptables lorsqu'il s'agit d'une femme, car, ces dernières seraient logiquement investies d’un statut social différent de celui des hommes donc, incompatible avec certains châtiments. On pourrait donc penser qu’à cette époque, les individus se voyaient confrontés à une justice genrée.
+</Text>
+<Chapitres 
+  description=""
+  chapitres={
+    [
+      {label: "Criminalité et genre - Présentation", url: "/2020/criminalite-et-genre-1"},
+      {label: "Crimes contre les femmes", url: "/2020/criminalite-et-genre-2"},
+      {label: "Commis par des femmes", url: "/2020/criminalite-et-genre-3", current: true},
+      {label: "Prostitution et débauche", url: "/2020/criminalite-et-genre-4"},
+    ]
+  }
+/>
+
+<div class="p-24 py-12 text-sm bg-gray-400">
+  <h3>Médiagraphie</h3>
+<h4>Pour aller plus loin</h4>
+« Cour d’Assises », Le progrès de l’Est, 10 octobre 1884, [en ligne]. (Consulté le 14 août 2020) http://numerique.banq.qc.ca/patrimoine/details/52327/3543843?docsearchtext=lothrop
+
+« Court of Queen’s Bench  », The Weekly Examiner, 10 octobre 1884, [en ligne]. (Consulté le 14 août 2020) http://numerique.banq.qc.ca/patrimoine/details/52327/3468044?docsearchtext=lothrop
+
+« Le meurtre de Wolfestown », Journal des campagnes, 23 août 1888, [en ligne]. (Consulté le 14 août 2020) http://numerique.banq.qc.ca/patrimoine/details/52327/3632771?docsearchtext=meutre%20sherbrooke
+
+« An important question », The Equity, 4 avril 1889, [en ligne]. (Consulté le 14 août 2020) http://numerique.banq.qc.ca/patrimoine/details/52327/2554023?docsearchtext=bella%20kerr
+
+« Le meurtre de Wolfestown », Le Quotidien, 10 octobre 1888, [en ligne]. (Consulté le 14 août 2020) http://numerique.banq.qc.ca/patrimoine/details/52327/3741532?docsearchtext=lada%20lamontagne
+
+BERNIER, J. & CELLARD, A. Le syndrome de la femme fatale : « Matricide »et représentation féminine au Québec, 1898-1940. Criminologie, volume 29, automne 1996, p. 29–48.
+</div>

@@ -1,0 +1,84 @@
+---
+layout: ../../layouts/Article.astro
+title: La criminalité urbaine à Sherbrooke au tournant du XXe siècle
+---
+import Header from '../../components/Header.astro';
+import Chapeau from '../../components/Chapeau.astro';
+import Cols5 from '../../components/Cols5.astro';
+import Text from '../../components/Text.astro';
+import Chapitres from '../../components/Chapitres.astro';
+import CrimesurbainsSherbrookeProjetWinter from '../../tableaux/CrimesurbainsSherbrookeProjetWinter.astro';
+
+<Header titre="La criminalité urbaine à Sherbrooke au tournant du XXe siècle" image="/assets/img/2309afd4-890c-4668-8fc8-73f36cd5dee0.jpg"/>
+
+<Text>
+Vers la fin du XIXe siècle, Sherbrooke est une ville en pleine croissance. La force hydraulique de la rivière Magog attire nombre d’industries, notamment dans le domaine du textile. Ces usines emploient un nombre toujours grandissant d’ouvriers, dont la plupart sont Canadiens-Français. La proximité des États-Unis et le développement des chemins de fer en font un endroit de choix. Il y transite ainsi une grande quantité de marchandises, de même que de nombreux voyageurs. La population croît rapidement et le territoire urbanisé s’accroît en conséquence[1]. Ces changements auront un impact certain sur la criminalité de la ville.
+
+<blockquote>Mais comment l’influence de l’urbanisation se manifeste-t-elle dans la gestion du crime par la police de Sherbrooke entre 1885 et 1920 ?</blockquote>
+</Text>
+
+<Cols5 
+  i1="/assets/img/2309afd4-890c-4668-8fc8-73f36cd5dee0.jpg" l1="1. Vue de la rue Wellington Nord à partir du coin King, vers la fin XIXe  siècle."
+  i2="/assets/img/fbe3387a-14c2-41f1-839d-492beefa6613.jpg" l2="2. La Station du Grand Tronc (plus tard Station Union), rue du Dépôt, vers 1920."
+  i3="/assets/img/5292934c-db8f-4e23-aa00-533c86c86ecd.jpg" l3="3. Vue aérienne de Sherbrooke vers 1925."
+  i4="/assets/img/f24163a6-2f99-4597-b71e-2af6b7707433.jpg" l4="4. Manufacture de textile Julius Kayser Co."
+  i5="/assets/img/e3e8c268-7e2d-4076-8993-ef119094fb66.jpg" l5="5. L'Hôtel New Sherbrooke, au coin des rues King et Dépôt vers 1910-1920."
+  />
+
+<Text>
+À l’aide des « Day Books » du Service de police de Sherbrooke, nous tenterons de quantifier l’action de cette instance régulatrice de la criminalité. Ce corpus de sources est composé de cahiers dans lesquels les agents consignent chaque jour une brève description de leurs interventions journalières. Nous avons convenu d’étudier un échantillon de quatre mois par an à raison d’un par saison, soit janvier, avril, juillet et octobre, pour les années 1885 et 1890, puis 1915 et 1920. Ensuite, nous avons uniquement pris compte les arrestations, desquelles nous tâcherons d’extraire le lieu, la date, l’heure et le crime commis. Nous avons établi des catégories de crimes, des tranches horaires et des quartiers principaux pour pouvoir traiter les données sous les angles du crime type, de la temporalité et de la distribution géographique. Cette dernière composante se déploie sous la forme d'une carte dans laquelle sera géolocalisée chaque arrestation (lorsque les données le permettent). Les noms des agents et des contrevenants, de même que les effets personnels des personnes appréhendées n’ont pas été comptabilisés. Les limites de ces documents sont principalement les erreurs ou les omissions des policiers, de même que leur façon de consigner leurs interventions. En effet, la précision des informations des entrées est très variable. Quant à notre étude, ses limites reposent dans notre choix des informations consignées et dans la petite taille de notre échantillon et à son incomplétude, puisqu'il manquait notamment deux mois à l'année 1885.
+
+Lors de la première période à l'étude (1885-1890), l’action des officiers est relativement circonscrite à la zone comprenant les quartiers Market et centre-ville, qui se déploient autour des axes des rues King et Wellington (voir carte 1). Cette zone, notamment la rue Wellington, est à l’époque en train de supplanter l’ancien cœur économique de la ville, qui se situait aux environs de la rue Commercial (aujourd’hui Dufferin) et le quartier judiciaire, où se situe la prison Winter. En effet, la gare de la compagnie de chemins de fer du Grand Tronc, construite en 1852, concentre les flux de marchandises et d’individus, ce qui attire les activités commerciales et financières de la ville[2]. Suivant ce déplacement, les commerces, les restaurants et les hôtels effectuent une migration semblable. La criminalité traitée par la police concerne principalement l’ordre public et les contrevenants sont essentiellement des ivrognes (voir la section Le criminel type). Vers 1915-1920, les crimes traités sont sensiblement les mêmes et concernent principalement l’ivrognerie ou le désordre public. Par contre, le rayon d’action des policiers s’agrandit, et le nombre d’interventions gagne en importance, ce qui semble corroborer l’influence de l’urbanité et de la condition ouvrière sur la criminalité, dans le contexte d’une ville ouvrière en pleine expansion. Lors des deux périodes, il y a davantage d’arrestations le soir et la nuit, possiblement lorsque les travailleurs sont désœuvrés, de même qu'un plus grand nombre d'arrestations lors des mois d'été et d'automne, lorsque la température est plus clémente (voir graphique 1).
+</Text>
+
+<div class="flourish-embed" data-src="story/543139">
+  <script src="https://public.flourish.studio/resources/embed.js"></script>
+</div>
+
+<CrimesurbainsSherbrookeProjetWinter/>
+
+<Chapitres 
+  description="Dans les pages attenantes, nous irons plus en détail sur certains des sujets soulevés lors de notre étude, soit le criminel typique de Sherbrooke, la station du dépôt comme point chaud des arrestations, un portrait du service de police de Sherbrooke et le lien entre l’urbanisation et la criminalité."
+  chapitres={
+    [
+      {label: "Criminalité urbaine - Présentation", url: "/2020/criminalite-urbaine-1", current: true},
+      {label: "Criminel type", url: "/2020/criminalite-urbaine-2"},
+      {label: "Police de Sherbrooke", url: "/2020/criminalite-urbaine-3"},
+      {label: "La station du dépôt", url: "/2020/criminalite-urbaine-4"},
+      {label: "Urbanisation et criminalité", url: "/2020/criminalite-urbaine-5"}
+    ]
+  }
+/>
+
+<div class="p-24 py-12 text-sm bg-gray-400">
+  <h3>Médiagraphie</h3>
+  <h4>Sources</h4>
+Sherbrooke, Musée d'histoire de Sherbrooke, Police Day Books, 1885, P288.1A/3
+Sherbrooke, Musée d'histoire de Sherbrooke, Police Day Books, 1890, P288.1A/3
+Sherbrooke, Musée d'histoire de Sherbrooke, Police Day Books, 1915, P288.1A/3
+Sherbrooke, Musée d'histoire de Sherbrooke, Police Day Books, 1920, P288.1A/3
+
+<h4>Références</h4>
+[1] Jean-Pierre Kesteman, « La Condition urbaine vue sous l’angle de la conjoncture économique: Sherbrooke, 1875 à 1914 - ProQuest », Urban History Review, vol. 12, n° 1, juin 1983, p. 13-16.
+
+[2] « Gare du CN de Sherbrooke », Répertoire du patrimoine culturel du Québec, s.d., consulté le 13 août 2020, http://www.patrimoine-culturel.gouv.qc.ca/rpcq/detail.do?methode=consulter&id=93306&type=bien
+
+<h4>Images</h4>
+1. « Wellington St. Looking North. », Montreal Import Co., BAnQ (4765170).
+
+2. « Station du Canadien National, Sherbrooke, Que. », Fonds Laurette Cotnoir-Capponi, BAnQ (P186,S9,P361).
+
+3. Fairchild Aerial Surveys Co., Grand Mère, BAnQ (P600,S4,SS3,P469/560).
+
+4. « Power Dam and Kaysers Silk Mills », Sherbrooke, Quebec, n°16, BAnQ (4777784).
+
+5. « The New Sherbrooke, Sherbrooke, Que. », International Fine Art Co., Montréal, BAnQ. (4286887).
+
+<h4>Pour aller plus loin...</h4>
+SZABO, Denis. « Vie urbaine et criminalité ». Recherches sociographiques, vol. 9, n° 1-2, 1968, p. 67-81.
+
+PROULX, Daniel. Juges, policiers et truands: les dessous de la justice au Québec. Montréal, Éditions du Méridien, 1999, 193 p.
+
+FECTEAU, Jean-Marie. La liberté du pauvre: sur la régulation du crime et de la pauvreté au XIXe siècle québécois. Montréal, VLB, 2004, coll. « Études québécoises; 63e », 455 p.
+
+</div>

@@ -1,0 +1,54 @@
+---
+layout: ../../layouts/Article.astro
+title: 'La prostitution et les maisons de débauche'
+---
+import Header from '../../components/Header.astro';
+import Chapeau from '../../components/Chapeau.astro';
+import Cols3 from '../../components/Cols3.astro';
+import Text from '../../components/Text.astro';
+import Chapitres from '../../components/Chapitres.astro';
+
+<Header titre="La prostitution et les maisons de débauche" image="/assets/img/henri.jpg"/>
+
+
+<Text>
+  Débutons avec deux citations de Andrée Lévesque:
+  <blockquote>«À une époque où la sexualité sous toutes ses formes doit être fortement contrôlée, la présence d’un milieu où se trafiquent ouvertement des activités sexuelles viole le code moral officiel, provoque le scandale et présente un danger de contagion. Toutes ces conditions sont réunies pour susciter l’intervention de personnes soucieuses d’assainir, dans tous les sens du terme, l’espace urbain.»</blockquote>
+  <blockquote>«Outre l’aspect moral, deux problèmes – la corruption policière et la transmission des maladies vénériennes – alimentent ce débat. Les réformateurs sociaux, les autorités religieuses, ainsi que les organisations féministes réclament la fermeture des maisons qu’on dit de désordre. D’autre part, des politiciens, des médecins, des juges, des policiers et tous ceux et celles qui sont liés à ce commerce en prônent la tolérance.»</blockquote>
+</Text>
+<Text dark={true}>
+<h3 class="text-white">Les propriétaires de maisons de débauche et les prostituées</h3>
+Suite à l’échantillonnage, nous avons repéré divers cas de prostitution commise par des femmes. En effet, dans le registre d’écrou, entre 1882 et 1891, il y a quatre femmes tenant des maisons de débauche. Elles proviennent toutes de Sherbrooke. Une seule d’entre elles est mariée. Une seule a une lecture et une écriture imparfaites tandis que les autres n’ont aucune éducation. Pour la même période de temps, il y a six cas de prostitution qui apparaissent. Un profil se dégage de ce petit échantillon: elles sont toutes âgées de moins de 25 ans, certaines étant mineures, originaires de Sherbrooke, célibataires et sans éducation. Donc, les prostituées sont toujours inférieures en âge aux femmes dirigeant les maisons closes. De plus, les femmes ayant été arrêtées pour ces crimes ont peu d’éducation en majorité. On pourrait alors en déduire qu’elles proviennent d’une classe sociale assez pauvre. Ce qui pourrait expliquer qu’elles adoptent ce mode de vie. Pour ce qui est des sentences accordées aux femmes tenant des maisons de débauche, elles varient beaucoup. Une femme n’obtient aucune sentence, une autre doit aller deux mois en prison, une autre un an et la dernière doit aller en réforme pendant deux ans. Quant aux sentences pour la prostitution, elles varient entre deux mois en prison et trois ans en réforme. Les sentences demeurent assez différentes d’un cas à l’autre. La sévérité des sentences ne semble pas se baser sur un modèle, mais plutôt sur la décision du magistrat elle-même qui serait influencée par ses valeurs et son désir de tolérer ou de ne pas tolérer ces maisons de désordre. Si on avait pu couvrir toutes les années, il aurait été intéressant de voir si, à travers les années, les sentences deviennent plus sévères suivant le mouvement réformateur qui prend place dans la société, comme nous l’explique Andrée Lévesque avec le cas de Montréal.
+</Text>
+<Text>
+  <h3>Les époux Richer</h3>
+ En janvier 1907, Eugène Richer, un marchand de 34 ans et sa femme Mélina David Richer, une prostituée de 29 ans, les deux originaires de Montréal, sont accusés d’avoir tenté d’entraîner une jeune fille de 21 ans à se prostituer. L’époux est acquitté tandis que sa femme doit purger 10 mois en prison. Encore une fois, il semble que l’unique raison qui explique le fait que la femme soit jugée plus sévèrement que l’homme provient de la décision du magistrat. Les femmes semblent être jugées différemment que les hommes et ceci transparaît au niveau juridique.
+</Text>
+<div class="flex flex-row justify-center gap-10 items-center">
+  <img class="w-1/4" src="/assets/img/Capture-9.png"/>
+  <img class="w-1/4" src="/assets/img/Capture-6.png"/>
+  <img class="w-1/4"  src="/assets/img/Capture-8.png"/>
+</div>
+<Chapitres 
+  description=""
+  chapitres={
+    [
+      {label: "Criminalité et genre - Présentation", url: "/2020/criminalite-et-genre-1"},
+      {label: "Crimes contre les femmes", url: "/2020/criminalite-et-genre-2"},
+      {label: "Commis par des femmes", url: "/2020/criminalite-et-genre-3"},
+      {label: "Prostitution et débauche", url: "/2020/criminalite-et-genre-4", current: true},
+    ]
+  }
+/>
+
+<div class="p-24 py-12 text-sm bg-gray-400">
+  <h3>Médiagraphie</h3>
+<h4>Sources</h4>
+« Notes locales », Le progrès de l’Est, 25 janvier 1907, [en ligne]. (Consulté le 14 août 2020) http://numerique.banq.qc.ca/patrimoine/details/52327/3546020?docsearchtext=eug%C3%A8ne%20richer.
+
+« Notes locales », Le progrès de l’Est, 1 février 1907, [en ligne]. (Consulté le 14 août 2020) http://numerique.banq.qc.ca/patrimoine/details/52327/3546022?docsearchtext=M%C3%A9lina%20richer.
+
+« Notes locales », Le progrès de l’Est, 8 février1907, [en ligne]. (Consulté le 14 août 2020) http://numerique.banq.qc.ca/patrimoine/details/52327/3546024?docsearchtext=eug%C3%A8ne%20richer.
+<h4>Pour aller plus loin</h4>
+Andrée Lévesque, « Éteindre le Red Light : les réformateurs et la prostitution à Montréal entre 1865 et 1925 », Revue d’histoire urbaine, vol. 17, n° 3, février 1989, p. 191‑201.
+</div>

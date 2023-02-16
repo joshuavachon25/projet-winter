@@ -1,0 +1,64 @@
+---
+layout: ../../layouts/Article.astro
+title: 'Criminalité périphérique'
+---
+import Header from '../../components/Header.astro';
+import Chapeau from '../../components/Chapeau.astro';
+import Cols3 from '../../components/Cols3.astro';
+import Text from '../../components/Text.astro';
+import Chapitres from '../../components/Chapitres.astro';
+import CriminalitePeri1 from '../../tableaux/CriminalitePeri1.astro'
+
+<Header titre="Criminalité périphérique" image="/assets/img/2748843.jpg"/>
+
+<Text>
+<h3>Objectifs de recherche</h3>
+Notre équipe a été mandatée de s'interroger sur la criminalité en périphérie de Sherbrooke à la fin du XIXe siècle. Nous avons donc dû nous intéresser en priorité sur la provenance géographique des prisonniers et les crimes qu’ils ont commis. Notre objectif de recherche porte sur la définition d’un portrait type d’un criminel de la périphérie de Sherbrooke. Nous cherchons également à tisser des liens entre différentes caractéristiques sociodémographiques des prisonniers de cette période. Il faut se rappeler que ce ne sont que des résultats préliminaires qui demandent à être approfondis.
+</Text>
+<div class="bg-black py-1">
+    <img class="mx-auto" src="/assets/img/telechargement-2-portrait.png" alt="Model School" title="Model School"/>
+    <p class="px-20 text-center text-gray-300 text-xs">CHANNELL, Leonard Stewart. « Model School ». Dans History of Compton County and Sketches of the Eastern Townships, 1896, p. 188. Sur le site BAnQ, consulté le 15 août 2020, collections.banq.qc.ca/ark:/52327/1957450.</p>
+</div>
+<Text>
+<h3>Sources et méthodologie</h3>
+Pour y parvenir, nous avons travaillé avec les registres d’écrou de la prison Winter. Ces registres servaient à garder un suivi du processus carcéral des prisonniers et de leur traitement dans le système judiciaire. Ces registres sont produits en séries. Nous travaillons en effet sur cinq différents registres s’étendant de 1882 à 1915. Ce sont des sources typiques qui proviennent d’une institution carcérale et il s’agit de documents officiels. Assez volumineux, ces cahiers sont constitués de tableaux sur environ 75 pages doubles. Le canevas des tableaux est fixe, mais les informations sont entrées à la main par un garde qui en est responsable. D’ailleurs, certaines entrées sont parfois illisibles. Nous avons eu accès à ces registres d’écrou grâce à la BAnQ. Nous sommes conscients qu’il faut prendre garde aux informations présentes dans la source. En effet, il ne faut pas oublier que certains jugements, erreurs et discriminations peuvent avoir influencé les entrées.
+
+Afin de dresser le portrait du criminel type de la périphérie de Sherbrooke, nous avons choisi de comptabiliser les données aux cinq ans. Ainsi, nous pouvions remarquer des évolutions dans les tendances tout en limitant le nombre de données que nous devions recueillir. Les données nous intéressant particulièrement étaient la résidence – le point central de notre recherche –, l’occupation, l’âge, l’origine, le genre, l’état civil, le type de crime et le niveau d’éducation. Nous avons mis de côté toutes les données touchant au processus judiciaire et son suivi, puisque nous souhaitions nous concentrer sur le profil criminel et non sur son parcours en prison. Ainsi, les informations relatives aux procès, aux autorités, aux sentences et aux évasions ne font pas partie de notre analyse.
+</Text>
+<CriminalitePeri1/>
+<Text>
+<h3>Analyse</h3>
+Voici le portrait type que nous avons pu former à l’aide de nos données. Le criminel « typique » de région est un homme marié, Canadien et catholique dans la vingtaine. Peter Lacron, dans les registres de mars 1890, est l'exemple parfait. Il est journalier dans une usine de la région. Son crime est une infraction contre la propriété, plus précisément un vol. Il savait également lire et écrire. Peter vient de Cookshire, cependant nous ne nous avançons pas sur un lieu « type » de la criminalité périphérique. Bien que certains endroits hébergeaient plus de criminels, aucune ville n’était significativement plus criminelle que les autres.
+</Text>
+<img src="/assets/img/2.png" class="w-96 mx-auto"/>
+<span class="text-xs px-20 text-center block w-full">[N.D.]. « Un historique de Magog et son brillant avenir », La Tribune, 24 mai 1913, p.1. collections.banq.qc.ca/ark:/52327/3503748.</span>
+<Text>
+Le chemin de fer favorisant l’implantation d’industries et passant dans beaucoup de localités du district judiciaire de Saint-François peut expliquer la grande présence de journaliers en régions. Cependant, leur abondance en prison pourrait être due à diverses crises dans l’économie ou dans les usines. Ainsi, peut-être qu’ils ont eu recours au vol afin de subvenir à leurs besoins et ceux de leur famille.
+
+L’éducation est également intéressante, puisque nous avons pu remarquer une certaine évolution dans le niveau de scolarisation des détenus. Cette augmentation de la scolarisation pourrait être en lien avec l’implantation d’écoles de rangs en campagne et une amélioration du système scolaire au Québec.
+</Text>
+<div class="flourish-embed" data-src="story/518946">
+  <script src="https://public.flourish.studio/resources/embed.js"></script>
+</div>
+<Chapitres 
+  description=""
+  chapitres={
+    [
+      {label: "Criminalité périphérique - Présentation", url: "/2020/criminalite-peripherique-1", current: true},
+      {label: "Frontière américaine", url: "/2020/criminalite-peripherique-2"},
+      {label: "Région de Mégantic", url: "/2020/criminalite-peripherique-3"},
+      {label: "Thetford Mines", url: "/2020/criminalite-peripherique-4"},
+      {label: "Lennoxville", url: "/2020/criminalite-peripherique-5"},
+    ]
+  }
+/>
+
+<div class="p-24 py-12 text-sm bg-gray-400">
+  <h3>Médiagraphie</h3>
+<h4>Références</h4>
+HEAP, Ruby. « Le mouvement de ruralisation scolaire au Québec au début du XXe siècle ». Études d’histoire religieuse, vol. 58, 1992, p. 9‑27.
+
+KESTEMAN, Jean-Pierre. Histoire de Sherbrooke. vol. 3 : La ville de l'électricité et du tramway (1897-1929), Sherbrooke, GGC, 2002, 51‑58, 65‑67, 103‑112, 176‑185, 248‑258 p.
+
+LINTEAU, Paul-André. « L’histoire économique du Québec de la période 1867-1929. Tendances récentes ». Dans Érudition, humanisme et savoir. Actes du colloque en l’honneur de Jean Hamelin. , 1996, p.131‑152.
+</div>

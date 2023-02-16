@@ -1,0 +1,58 @@
+---
+layout: ../../layouts/Article.astro
+title: Le criminel type de Sherbrooke
+---
+import Header from '../../components/Header.astro';
+import Chapeau from '../../components/Chapeau.astro';
+import Cols5 from '../../components/Cols5.astro';
+import Text from '../../components/Text.astro';
+import Chapitres from '../../components/Chapitres.astro';
+
+<Header titre="Le criminel type de Sherbrooke" image="/assets/img/03Q_P600S4SS3P469_560.jpg"/>
+
+<Text>
+
+À la lumière de nos résultats de recherches sur la criminalité urbaine, nous avons pu dresser le profil typique du criminel local de Sherbrooke vers 1900.
+
+  <img class="mx-auto" src="/assets/img/thumbnail_LeProgresDeLEst_5juillet1910_p3-300x122.jpg"/>
+
+On remarque d'abord que l'ivresse était la principale cause d'arrestation : 78,5% des arrestations que nous avons relevées dans les « Day Books » étaient pour désordre public et une écrasante majorité impliquait l’alcool. D’autre part, ces interventions surviennent surtout le soir et la nuit, lorsque la journée de travail typique est terminée. On peut ainsi dresser le portrait du criminel type de la ville de Sherbrooke entre 1885 et 1920. Celui-ci serait un homme, probablement un ouvrier, arrêté pour ivresse, de même que pour désordre ou incapacité.
+
+Cet article de 1902 du journal The Sherbrooke Examiner nous confirme la prépondérance de ce type de crime :
+<blockquote>« Charges of drunk and incapable head the list of the statistics of offences committed, being 86; drunk and disorderly, 78; drunk and loitering [...] The figures also show that there were 21 charges of larceny laid, and 22 for common assault. The labourer tops the list of prisoners, the number being 157, while farmers follow with 24[1]. »</blockquote>
+
+Pourquoi y avait-il autant d’arrestations liées à l’ivresse ? Est-ce que l’ivrognerie était omniprésente, ou était-ce simplement qu’il était plus aisé de traiter ce type de criminalité qu’un autre comme le vol, qui pourrait demander plus de ressources et une enquête? Nous soupçonnons que la police se concentrait davantage sur ce type de crime pour plusieurs raisons. D’abord, c’est à cette époque que l’on dresse les grandes lignes de la « ville propre » et que l’on tente de réguler les désordres des classes ouvrières et pauvres, notamment ceux liés à l’alcool. D’autre part, la concentration des débits de boisson au centre-ville rend ce territoire facile à couvrir pour des officiers à pieds. Enfin, il est possible que les activités policières aient été simplement limitées par leurs faibles ressources et l’absence de moyens de transport autres que la marche.
+</Text>
+
+<div class="bg-white py-10">
+  <div class="px-20 text-center text-sm">
+    <h4>Graphique 1 : Pourcentage par type de crime</h4>
+    Les crimes contre l'ordre public représentent l'écrasante majorité des cas, entre autres en raison des crimes liés à l'ivresse
+  </div>
+  <div class="flourish-embed flourish-chart" data-src="visualisation/3466316">
+    <script src="https://public.flourish.studio/resources/embed.js"></script>
+  </div>
+</div>
+
+<Chapitres 
+  description=""
+  chapitres={
+    [
+      {label: "Criminalité urbaine - Présentation", url: "/2020/criminalite-urbaine-1"},
+      {label: "Criminel type", url: "/2020/criminalite-urbaine-2", current: true},
+      {label: "Police de Sherbrooke", url: "/2020/criminalite-urbaine-3"},
+      {label: "La station du dépôt", url: "/2020/criminalite-urbaine-4"},
+      {label: "Urbanisation et criminalité", url: "/2020/criminalite-urbaine-5"}
+    ]
+  }
+/>
+
+<div class="p-24 py-12 text-sm bg-gray-400">
+  <h3>Médiagraphie</h3>
+<h4>Références</h4>
+[1]  « Liquor traffic responsible for majority of arrests », The Sherbrooke examiner, Sherbrooke, Québec, 6 janvier 1902, p. 1
+[2] OUIMET, Marc. La criminalité au Québec durant le vingtième siècle. Québec, Éditions de l’IQRC, 2005, 408 p.
+
+<h4>Images</h4>
+1. Le Progrès De l'Est, 05 juillet 1910.
+</div>

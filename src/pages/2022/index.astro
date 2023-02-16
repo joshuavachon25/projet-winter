@@ -1,0 +1,93 @@
+---
+import Accueil from '../../layouts/Accueil.astro';
+---
+
+<Accueil title="Projet-Winter - Choisissez votre édition">
+  <a href="/2020" class="btn-change-edition">Voir édition 2020</a>
+	<main class="w-full min-h-screen">
+    <header class="w-full h-screen"></header>
+    <aside>
+      <h3 class="text-2xl font-bold text-yellow-100 uppercase">Édition 2022</h3>
+      <h1 class="text-9xl font-bold text-yellow-50 uppercase">Winter</h1>
+      <p class="max-w-md text-justify text-yellow-50 mt-12 font-light mb-10">Choisissez une thématique</p>
+      <a href="#" class="btn-theme">Délinquance juvénile</a>
+      <a href="#" class="btn-theme">Rapports d'inspection</a>
+      <a href="#" class="btn-theme">Évolution pénale</a>
+      <a href="#" class="btn-theme">Travail policier</a>
+      <a href="#" class="btn-theme">Dans les médias</a>
+    </aside>
+  </main>
+  <a href="#" class="btn-info">À propos</a>
+</Accueil>
+
+
+<style>
+ main{
+  background: #1f1d1b;
+ }
+
+  header{
+    background-image: url('/assets/bg1.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: opacity(0.05); 
+  }
+
+  aside{
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 9%;
+  }
+
+  .btn-theme{
+    width: 20%;
+    text-align: center;
+    margin-bottom: 10px;
+    padding: 10px 40px;
+    border-radius: 3px;
+    font-weight: 500;
+    border: 2px solid rgb(254 252 232);
+    color: rgb(254 252 232);
+    transition: 1s;
+  }
+
+  .btn-info{
+    position: absolute;
+    right: 10px;
+    top:10px;
+    text-align: center;
+    margin-bottom: 10px;
+    padding: 5px 20px;
+    border-radius: 3px;
+    font-weight: 500;
+    border: 2px solid rgb(254 252 232);
+    color: rgb(254 252 232);
+    transition: 1s;
+  }
+
+  .btn-change-edition{
+    position:absolute;
+    left: 10px;
+    top:10px;
+    text-align: center;
+    margin-bottom: 10px;
+    padding: 5px 20px;
+    border-radius: 3px;
+    font-weight: 500;
+    border: 2px solid rgb(254 252 232);
+    color: rgb(254 252 232);
+    transition: 1s;
+    z-index:999;
+  }
+
+  .btn-theme:hover, .btn-info:hover, .btn-change-edition:hover{
+    background: rgb(254 252 232);
+    color: #1f1d1b;
+  }
+</style>

@@ -1,0 +1,48 @@
+---
+layout: ../../layouts/Article.astro
+title: 'Criminalité à la frontière américaine'
+---
+import Header from '../../components/Header.astro';
+import Chapeau from '../../components/Chapeau.astro';
+import Cols3 from '../../components/Cols3.astro';
+import Text from '../../components/Text.astro';
+import Chapitres from '../../components/Chapitres.astro';
+
+<Header titre="Criminalité à la frontière américaine" image="/assets/img/2632935.jpg"/>
+
+<Text>
+Durant son histoire, la prison Winter accueillera de nombreux prisonniers provenant de milieux ruraux. Liés à la proximité des États-Unis, les villages du sud de la région vivront une forte croissance économique et démographique. De ces faits, il y aura un apport important de prisonniers campagnards originaires des alentours du Lac Memphrémagog et de la frontière. Il sera intéressant d’analyser les villages entourant le Memphrémagog et la frontière américaine pour se questionner sur les causes et faits de cet apport et ce qui caractérise cette région. L’objectif sera donc d’estimer le profil type du criminel canadien provenant des régions de Coaticook et du Memphrémagog. Ces régions englobent les villes et villages de Magog, Cherry river (Magog), Stanstead, Rock Island, Coaticook et autres petits villages se trouvant au sud de Sherbrooke. L’analyse tentera d’estimer les lieux où la provenance des criminels est la plus élevée. Par la suite, les recherches s’efforceront d’expliquer le phénomène de ce grand apport de criminels.
+</Text>
+<Text>
+  <h3>Résultats de recherche</h3>
+De prime abord, les lieux de provenance les plus importants de la région sont en première place Magog qui compte 44 cas sur 122 arrestations réparties sur les années 1885 à 1915. De très près, en deuxième place, Coaticook suit avec 31 cas et en troisième place Stanstead avec 14 cas. Puis, la catégorie de crimes les plus souvent commis dans cette région est le crime contre la propriété. Les métiers les plus fréquents sont les journaliers dans des usines. Selon les registres d’écrou, les criminels savent lire et écrire, sont des hommes mariés et catholiques pour la plupart.
+</Text>
+<div class="grid grid-cols-3 gap-20 items-center">
+  <a href="/assets/img/2020-08-17-10.png" target="_blank"><img src="/assets/img/2020-08-17-10.png" alt="Catégories de métiers" title="Catégories de métiers" class="w-96"/></a>
+  <a href="/assets/img/2020-08-17-11.png" target="_blank"><img src="/assets/img/2020-08-17-11.png" alt="Catégories de crimes" title="Catégories de crimes" class="w-96"/></a>
+  <a href="/assets/img/2020-08-17-16.png" target="_blank"><img src="/assets/img/2020-08-17-16.png" alt="Tranche d'âge des individus" title="Tranche d'âge des individus" class="w-96"/></a>
+</div>
+<Text>
+Naturellement, la région du Memphrémagog et de Coaticook se caractérise par la frontière américaine. Il y a de nombreux passages avec le chemin de fer, mais aussi il y a l’accès au lac Memphrémagog qui offre l’opportunité de navigation et de transport ferroviaire. En additionnant tous ces aspects, ces régions ont pu grandement se développer avec les usines et il y a eu une grande évolution démographique à la fin du XIXe siècle. Il n’y a qu’à prendre l’exemple de Stanstead et de Magog qui verront beaucoup d’usines s’implanter. Il ne reste qu’à se poser la question si la région était la plus achalandée dans la périphérie de la ville de Sherbrooke.
+</Text>
+<img src="/assets/img/2020-08-17-4.png" class="w-96 mx-auto"/>
+<span class="text-xs px-20 pb-20 text-center block w-full">E. Bélanger & cie « Le progrès de l'Est : organe des populations des Cantons de l'Est». Journaux, 27 janvier 1885. Sur le site BAnQ, consulté le 20 août 2020, numerique.banq.qc.ca/patrimoine/details/52327/3543871?docsearchtext=Estrie%201885</span>
+
+<Chapitres 
+  description=""
+  chapitres={
+    [
+      {label: "Criminalité périphérique - Présentation", url: "/2020/criminalite-peripherique-1"},
+      {label: "Frontière américaine", url: "/2020/criminalite-peripherique-2", current: true},
+      {label: "Région de Mégantic", url: "/2020/criminalite-peripherique-3"},
+      {label: "Thetford Mines", url: "/2020/criminalite-peripherique-4"},
+      {label: "Lennoxville", url: "/2020/criminalite-peripherique-5"},
+    ]
+  }
+/>
+
+<div class="p-24 py-12 text-sm bg-gray-400">
+  <h3>Médiagraphie</h3>
+<h4>Pour aller plus loin</h4>
+Booth Derek. « The impact of railways on Stanstead: 1850 to 1950». Histoire Québec, Volume 14, numéro 3, 2009  p. 10-18.
+</div>

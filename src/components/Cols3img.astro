@@ -1,0 +1,17 @@
+---
+const {t, i1, u1, l1, i2, u2, l2, i3, u3, l3} = Astro.props
+---
+<h4 class="px-10 -mb-6">{t}</h4>
+<div class="grid grid-cols-3 gap-3 px-10">
+  <a href={u1} target="_blank"><img src={i1} alt={l1} title={l1}></a>
+  <a href={u2} target="_blank"><img src={i2} alt={l2} title={l2}></a>
+  <a href={u3} target="_blank"><img src={i3} alt={l3} title={l3}></a>
+</div>
+
+<style>
+  img{
+    object-fit: cover;
+    height: 150px;
+    width:100%;
+  }
+</style>

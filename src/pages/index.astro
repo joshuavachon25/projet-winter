@@ -1,0 +1,72 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Projet-Winter - Choisissez votre édition">
+	<main>
+    <section class="section-2020"></section>
+    <section class="section-2022"></section>
+  </main>
+  <header>
+    <h3 class="text-2xl font-bold text-yellow-100 uppercase">Sherbrooke derrière les barreaux</h3>
+    <h1 class="text-9xl font-bold text-yellow-50 uppercase">Winter</h1>
+    <p class="max-w-md text-justify text-yellow-50 mt-12 font-light">Une semaine intensive, 10 étudiants du Cégep, 10 étudiants de l'université, des archives carcérales... Un seul objectif; en apprendre plus sur l'histoire de la prison Winter de Sherbrooke.</p>
+    <div class="flex justify-evenly gap-20 mt-20">
+      <a href="/2020" class="btn-edition">Édition 2020</a>
+      <a href="/2022" class="btn-edition">Édition 2022</a>
+    </div>
+  </header>
+</Layout>
+
+<style>
+  main{
+    width: 100vw;
+    height: 100vh;
+    overflow:hidden;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .section-2020{
+    background: var(--ldark2020);
+    background-image:url('/assets/gauche.png'), linear-gradient(0deg, rgba(19,17,24,1) 0%, rgba(47,42,46,1) 100%);
+    background-repeat: no-repeat;
+    background-size: auto 95vh, 100% 100%;
+  }
+
+  .section-2022{
+    background: var(--ldark2022);
+    background-image:url('/assets/droite.png'), linear-gradient(0deg, rgba(41,20,14,1) 0%, rgba(59,41,36,1) 100%);
+    background-repeat: no-repeat;
+    background-size: auto 95vh, 100% 100%;
+    background-position: right 0%;
+  }
+
+  header{
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10%;
+  }
+
+  .btn-edition{
+    padding: 10px 40px;
+    border-radius: 50px;
+    font-weight: 500;
+    background: var(--orange1);
+    transition: 0.5s;
+  }
+
+  .btn-edition:hover{
+    padding: 10px 40px;
+    border-radius: 50px;
+    font-weight: 500;
+    background: var(--orange2);
+    box-shadow: 0 0 10px var(--orange2);
+  }
+</style>

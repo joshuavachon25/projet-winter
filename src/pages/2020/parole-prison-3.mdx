@@ -1,0 +1,70 @@
+---
+layout: ../../layouts/Article.astro
+title: '« Le fromage suisse Winter »'
+---
+import Header from '../../components/Header.astro';
+import Chapeau from '../../components/Chapeau.astro';
+import Cols3 from '../../components/Cols3.astro';
+import Text from '../../components/Text.astro';
+import Chapitres from '../../components/Chapitres.astro';
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/S6GQj7lxEKw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+     
+<Text>
+  <h3>« Le fromage suisse Winter »</h3>
+  L’évasion a toujours fait la manchette. Très tôt, comme le montre La Tribune dans les années 1920, ce crime à caractère exceptionnel interpelle le public. Il met à mal la capacité de rétention du milieu carcéral, mais peut aussi interroger son urbanité. L'ancrage de la prison Winter en milieu urbain ne favoriserait-elle pas les évasions?
+</Text>
+<div class="grid grid-cols-6 items-center gap-2">
+  <a href="/assets/img/4juillet1924.png" target="_blank"><img src="/assets/img/4juillet1924.png" alt="Article de journal" class="mx-auto" /></a>
+  <a href="/assets/img/30juillet1924-GT.png" target="_blank"><img src="/assets/img/30juillet1924-GT.png" alt="Article de journal"  class="mx-auto" /></a>
+  <a href="/assets/img/15aout1923-GT.png" target="_blank"><img src="/assets/img/15aout1923-GT.png" alt="Article de journal"  class="mx-auto" /></a>
+  <a href="/assets/img/20juin1914-GT.png" target="_blank"><img src="/assets/img/20juin1914-GT.png" alt="Article de journal"  class="mx-auto" /></a>
+  <a href="/assets/img/29juillet1924-GT.png" target="_blank"><img src="/assets/img/29juillet1924-GT.png" alt="Article de journal"  class="mx-auto" /></a>
+  <a href="/assets/img/5juillet1924-GT.png" target="_blank"><img src="/assets/img/5juillet1924-GT.png" alt="Article de journal"  class="mx-auto" /></a>
+</div>
+<p class="px-20 text-center text-gray-700 text-xs">Exemples de journaux (cliquer pour lire)</p>
+<Text>
+Le témoignage apporté par notre gardien de prison démontre que ce genre d’événements était relativement fréquent dans les années 1980. Les lacunes architecturales sont en partie responsables, ce qui explique l’ajout de barbelés ou encore le renforcement de structures comme la fixation des calorifères aux murs. Toutefois, la situation géographique joue également un rôle dans la porosité de la geôle.
+
+La relation entre la ville et la prison est complexe. Tantôt on la préfère en ville, tantôt on la repousse et la cache au gré des besoins d’urbanisation et sociétaux. Une comparaison des environnements urbain et rural expose l’opportunité que la ville offre à l’évasion. Le contexte urbain confère l’anonymat par la proximité des bâtiments et les dédales des rues. De plus, il augmente l’accessibilité des ressources, humaines et matérielles, favorisant à la fois l’évasion et la cachette.  L’exemple de compagnes de détenus ayant lancé une échelle par-dessus le mur de la prison, cité hors caméra par notre témoin, démontre que l’environnement urbain favorise aussi la complicité extérieure.
+
+En contrepartie, une prison en milieu rural diminue grandement cette accessibilité ou demande de faire œuvre d’inventivité pour camoufler sa fuite. L'anonymat devient beaucoup plus complexe à conserver ou à créer lors d'évasions de prisons construites sur des terrains vagues. Cependant, la périphérie semble devenir le théâtre de la cavale qui suit l’évasion comme le relatent les coupures de journaux.
+
+Ainsi, étudier la criminalité urbaine sous l’angle de l’évasion permet de souligner l'importance de la localisation d'un bâtiment aussi emblématique que la prison. Cela pousse la réflexion sur la nature des crimes dits "typiquement urbains". Ainsi, la prison devient actrice de l'histoire de la criminalité et non un simple lieu d'enfermement. Il importe d'étudier l'évasion afin de comprendre le caractère multidimensionnel du milieu carcéral ou, pour reprendre les mots de notre témoin, comprendre si la ville peut faire de la prison un véritable "fromage suisse".
+</Text>
+
+<Text>
+  <blockquote>«Ils sont contents, ils ont trompé la vigilance des gardiens, des screw comme y disent!» - Guy Thibodeau</blockquote>
+</Text>
+<Chapitres 
+  description=""
+  chapitres={
+    [
+      {label: "Parole à la prison - Présentation", url: "/2020/parole-prison-1"},
+      {label: "Prostitution", url: "/2020/parole-prison-2"},
+      {label: "Évasion", url: "/2020/parole-prison-3", current: true},
+      {label: "Conditions de vie", url: "/2020/parole-prison-4"},
+    ]
+  }
+/>
+
+<div class="p-24 py-12 text-sm bg-gray-400">
+  <h3>Médiagraphie</h3>
+<h4>Sources</h4>
+1-« Une double évasion de la prison », La Tribune, 20 juin 1914, consulté le 17 août 2020, url : http://collections.banq.qc.ca/ark:/52327/3504050 , p. 1.
+
+2-« Il s’évade de la prison commune », La Tribune, 4 juillet 1924, consulté le 17 août 2020, url : http://collections.banq.qc.ca/ark:/52327/3505540, p. 1.
+
+3- « On l’arrête à Rock Forest », La Tribune, 5 juillet 1924, consulté le 17 août 2020, url : http://collections.banq.qc.ca/ark:/52327/350554, p.3.
+
+4- « Une autre évasion à la prison de la rue Winter, hier après-midi », La Tribune, 29 juillet 1924, consulté le 14 août 2020, url : http://collections.banq.qc.ca/ark:/52327/3505561 , p. 1.
+
+5- « Pas encore arrêté mais on croit être sur ses traces », La Tribune, 30 juillet 1924, consulté le 14 août 2020, url : http://collections.banq.qc.ca/ark:/52327/3505562, p. 3.
+
+6-« Évasion de trois prisonniers de la prison de Sherbrooke, hier soir », La Tribune, 15 août 1923, consulté le 17 août 2020, url : http://collections.banq.qc.ca/ark:/52327/3505293, p. 3.
+
+<h4>Pour aller plus loin</h4>
+COMBESSIE, Philippe. « La ville et la prison une troublante cohabitation ». Revue Projet, n° 1, 2002, p. 70‑76.
+
+MILHAUD, Olivier. « L’enfermement ou la tentation spatialiste: De “l’action aveugle, mais sûre” des murs des prisons ». Annales de géographie, n° 702‑703, juin 2015, p. 140‑162.
+</div>

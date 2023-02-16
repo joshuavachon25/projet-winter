@@ -1,0 +1,51 @@
+---
+layout: ../../layouts/Article.astro
+title: 'La criminalité dans la région de Mégantic'
+---
+import Header from '../../components/Header.astro';
+import Chapeau from '../../components/Chapeau.astro';
+import Cols3 from '../../components/Cols3.astro';
+import Text from '../../components/Text.astro';
+import Chapitres from '../../components/Chapitres.astro';
+
+<Header titre="La criminalité dans la région de Mégantic" image="/assets/img/06M_P186S9P033a.jpg"/>
+
+<Text>
+ <h3>Objectif</h3>
+ Chaque région, ville et village est marqué par des facteurs sociaux et historiques différents. Le crime, lié à ces facteurs, peut être totalement différent d’une région à une autre. C’est pour cette raison que j’ai décidé de m’attarder au cas de la région de Mégantic. Pour ce faire, j’analyserai les cas de crimes dans les endroits suivants : Mégantic (Lac-Mégantic), Marston, Whitton (Sainte-Cécile-de-Whitton), Spring Hill (Nantes) et Piopolis. L'objectif est de dresser un portrait type du criminel méganticois et d'en expliquer les caractéristiques en fonction du contexte historique local.
+</Text>
+<Text>
+ <h3>Résultats</h3>
+Pour commencer, la plupart des crimes de la région sont commis à Mégantic même, l’endroit le plus populeux et développé. Les crimes les plus communs sont les infractions contre la propriété, surtout des vols. Le criminel type est un jeune homme canadien dans la vingtaine, journalier dans une usine, catholique et marié. Il sait lire et écrire.
+
+On remarque que le portrait type du criminel de la région de Mégantic est le même que celui auquel nous sommes parvenus dans notre recherche collective. En fait, il est possible de se questionner sur la similarité entre le contexte méganticois et le contexte général des périphéries de Sherbrooke des années 1880 à 1915.
+</Text>
+<div class="grid grid-cols-3 gap-20 items-center">
+  <a href="/assets/img/Graphique-1-_-Type-de-crime.png" target="_blank"><img src="/assets/img/Graphique-1-_-Type-de-crime.png" alt="Graphique 1: Type de crime" title="Graphique 1: Type de crime" class="w-96"/></a>
+  <a href="/assets/img/Graphique-2-_-Occupation.png" target="_blank"><img src="/assets/img/Graphique-2-_-Occupation.png" alt="Graphique 2: Occupation" title="Graphique 2: Occupation" class="w-96"/></a>
+  <a href="/assets/img/Graphique-3-_-Tranche-dâge-.png" target="_blank"><img src="/assets/img/Graphique-3-_-Tranche-dâge-.png" alt="Graphique 3: Tranche d'âge des individus" title="Graphique 3: Tranche d'âge des individus" class="w-96"/></a>
+</div>
+<Text>
+En effet, la région de Mégantic est caractérisée, tout comme la région de Sherbrooke, par le passage du chemin de fer et par la proximité avec les États-Unis. Ainsi, de nombreuses manufactures et usines ont pu s’installer à Mégantic. Il est donc probable que des journaliers ayant perdu leur emploi ou ne faisant pas assez d’argent décident de voler pour vivre. On peut même, au final, se demander si le type de criminels et leur quantité à Mégantic ont pu peser dans la balance de notre criminel type de la périphérie de Sherbrooke.
+</Text>
+<a href="/assets/img/2748843.jpg"><img src="/assets/img/2748843.jpg" class="w-96 mx-auto"/></a>
+<span class="text-xs px-20 pb-20 text-center block w-full">VACHON, F-X. « Lac Mégantic : Manufacture de papier ». Dans Le monde illustré, vol. 11, n° 564, 23 février 1895, p. 510. Sur le site BAnQ, consulté le 15 août 2020 .</span>
+
+<Chapitres 
+  description=""
+  chapitres={
+    [
+      {label: "Criminalité périphérique - Présentation", url: "/2020/criminalite-peripherique-1"},
+      {label: "Frontière américaine", url: "/2020/criminalite-peripherique-2"},
+      {label: "Région de Mégantic", url: "/2020/criminalite-peripherique-3", current: true},
+      {label: "Thetford Mines", url: "/2020/criminalite-peripherique-4"},
+      {label: "Lennoxville", url: "/2020/criminalite-peripherique-5"},
+    ]
+  }
+/>
+
+<div class="p-24 py-12 text-sm bg-gray-400">
+  <h3>Médiagraphie</h3>
+<h4>Pour aller plus loin</h4>
+FISHER, Sethard. « Economic Development and Crime : The Two May Be Associated as an Adaptation to Industrialism in Social Revolution ». The American Journal of Economics and Sociology, vol. 46, n° 1, 1987, p. 17-34.
+</div>

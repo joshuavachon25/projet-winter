@@ -1,0 +1,53 @@
+---
+layout: ../../layouts/Article.astro
+title: 'Le jeune criminel éduqué de Lennoxville'
+---
+import Header from '../../components/Header.astro';
+import Chapeau from '../../components/Chapeau.astro';
+import Cols3 from '../../components/Cols3.astro';
+import Text from '../../components/Text.astro';
+import Chapitres from '../../components/Chapitres.astro';
+
+<Header titre="Le jeune criminel éduqué de Lennoxville" image="/assets/img/rpcq_bien_168494_295449-scaled.jpeg"/>
+
+<Text>
+Le portrait du criminel type de Lennoxville possède plusieurs caractéristiques distinctives.
+
+L’une de ses caractéristiques se présente avec l’éducation où 42 % des individus savaient bien lire et écrire et où l'on constate l'absence de personne considérée comme illettrée dans les registres d’écrou. Pour ce qui est des occupations, plus de la moitié des prisonniers de notre échantillon travaillaient en usine et étaient presque exclusivement des hommes souvent célibataires dont la provenance était « canadienne » dans trois cas sur quatre. Ces personnes pouvaient être autant catholiques qu'anglicanes et leur crime commis le plus fréquent était l’agression, s'effectuant généralement en automne. La moitié d'entre eux avaient entre 16 et 25 ans.
+</Text>
+<div class="grid grid-cols-2 gap-10 items-center">
+  <a href="/assets/img/Screenshot-2020-08-14-at-11.20.03.png" target="_blank"><img src="/assets/img/Screenshot-2020-08-14-at-11.20.03.png" alt="«Lennoxville, the beautiful suburban village, seat of the university of Bishop's college.». Sherbrooke Daily Record, jeudi, 23 mars 1911, p.11." title="«Lennoxville, the beautiful suburban village, seat of the university of Bishop's college.». Sherbrooke Daily Record, jeudi, 23 mars 1911, p.11."/></a>
+  <a href="/assets/img/Screenshot-2020-08-14-at-11.18.03.png" target="_blank"><img src="/assets/img/Screenshot-2020-08-14-at-11.18.03.png" alt="«Lennoxville, the beautiful suburban village, seat of the university of Bishop's college.». Sherbrooke Daily Record, jeudi, 23 mars 1911, p.11." title="«Lennoxville, the beautiful suburban village, seat of the university of Bishop's college.». Sherbrooke Daily Record, jeudi, 23 mars 1911, p.11." /></a>
+</div>
+<Text>
+Il y a la possibilité d’expliquer ces données par la présence de l’université Bishop ayant ouvert en 1843, d’où le taux d’éducation assez élevé. Également, la présence de nombreuses industries modernes telles que les briqueteries faisant suite à l'interdiction de constructions de bois à cause du grand incendie de 1874¹ explique la majorité de journaliers et la présence de gens plus éduqués. L’université étant anglophone, sa population l’est aussi, expliquant la présence importante de chrétiens anglicans chez les criminels incarcérés provenant de Lennoxville. De plus, les hommes représentent la très grande majorité de ces criminels avec une proportion 87%². Le bas taux de personnes mariées peut s’expliquer, car les hommes se marient entre 25 et 29 ans à l’époque et que la pression familiale sur les relations chute dès les années 1880³.
+
+Si nous comparons Lennoxville avec une ville dénuée d’institutions d’enseignement, il serait possible de voir des résultats très différents et peut-être pas seulement sur le plan de l’éducation. Est-ce que cela influencerait le type de crime commis ou l’état civil de la personne incarcérée?
+</Text>
+<Chapitres 
+  description=""
+  chapitres={
+    [
+      {label: "Criminalité périphérique - Présentation", url: "/2020/criminalite-peripherique-1"},
+      {label: "Frontière américaine", url: "/2020/criminalite-peripherique-2"},
+      {label: "Région de Mégantic", url: "/2020/criminalite-peripherique-3"},
+      {label: "Thetford Mines", url: "/2020/criminalite-peripherique-4"},
+      {label: "Lennoxville", url: "/2020/criminalite-peripherique-5", current: true},
+    ]
+  }
+/>
+
+<div class="p-24 py-12 text-sm bg-gray-400">
+  <h3>Médiagraphie</h3>
+<h4>Références</h4>
+¹BÉLISLE, Jacinthe. « Lennoxville ». Continuité, nº41, 1988, p. 4
+
+²NIBOYET, Jean-Hyppolyte. « Criminalité ». Dictionnaire de pédagogie de Ferdinand, consulté le 14 août 2020
+www.inrp.fr/edition-electronique/lodel/dictionnaire-ferdinand-buisson/document.php?id=2492
+
+³WARD, Peter. « Histoire du mariage et du divorce ». L'Encyclopédie Canadienne, consulté le 14 août 2020
+www.thecanadianencyclopedia.ca/fr/article/histoire-du-mariage-et-du-divorce
+
+<h4>Pour aller plus loin</h4>
+BÉLISLE, Jacinthe. « Lennoxville ». Continuité, nº41, 1988
+</div>

@@ -1,0 +1,24 @@
+---
+const {i1, l1, d1, i2, l2, d2, i3, l3, d3} = Astro.props
+---
+<div class="grid grid-cols-3 gap-5 px-10">
+  <div>
+    <img class="mx-auto" src={i1} alt={l1} title={l1}>
+    <p class="text-sm text-justify">{d1}</p>
+  </div>
+  <div>
+    <img class="mx-auto" src={i2} alt={l2} title={l2}>
+    <p class="text-sm text-justify">{d2}</p>
+  </div>
+  <div>
+    <img class="mx-auto" src={i3} alt={l3} title={l3}>
+    <p class="text-sm text-justify">{d3}</p>
+  </div>
+</div>
+
+<style>
+  img{
+    object-fit: cover;
+    height: 150px;
+  }
+</style>

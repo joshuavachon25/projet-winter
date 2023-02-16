@@ -1,0 +1,93 @@
+---
+import Accueil from '../../layouts/Accueil.astro';
+---
+
+<Accueil title="Projet-Winter - Choisissez votre édition">
+  <a href="/2022" class="btn-change-edition">Voir édition 2022</a>
+	<main class="w-full min-h-screen">
+    <header class="w-full h-screen"></header>
+    <aside>
+      <h3 class="text-2xl font-bold text-yellow-100 uppercase">Édition 2020</h3>
+      <h1 class="text-9xl font-bold text-yellow-50 uppercase">Winter</h1>
+      <p class="max-w-md text-justify text-yellow-50 mt-12 font-light mb-10">Choisissez une thématique</p>
+      <a href="/2020/criminalite-urbaine-1" class="btn-theme">Criminalité urbaine</a>
+      <a href="/2020/criminalite-peripherique-1" class="btn-theme">Criminalité périphérique</a>
+      <a href="/2020/criminalite-et-genre-1" class="btn-theme">Criminalité et genre</a>
+      <a href="/2020/criminels-notables-1" class="btn-theme">Criminels notables</a>
+      <a href="/2020/parole-prison-1" class="btn-theme">La parole à la prison</a>
+    </aside>
+  </main>
+  <a href="/2020/a-propos" class="btn-info">À propos</a>
+</Accueil>
+
+<style>
+  
+ main{
+  background: rgba(19,17,24,1);
+ }
+
+  header{
+    background-image: url('/assets/bg1.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: opacity(0.05); 
+  }
+
+  aside{
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 9%;
+  }
+
+  .btn-theme{
+    width: 20%;
+    text-align: center;
+    margin-bottom: 10px;
+    padding: 10px 40px;
+    border-radius: 3px;
+    font-weight: 500;
+    border: 2px solid rgb(254 252 232);
+    color: rgb(254 252 232);
+    transition: 1s;
+  }
+
+  .btn-info{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    text-align: center;
+    margin-bottom: 10px;
+    padding: 5px 20px;
+    border-radius: 3px;
+    font-weight: 500;
+    border: 2px solid rgb(254 252 232);
+    color: rgb(254 252 232);
+    transition: 1s;
+  }
+
+  .btn-change-edition{
+    position:absolute;
+    left: 10px;
+    top:10px;
+    text-align: center;
+    margin-bottom: 10px;
+    padding: 5px 20px;
+    border-radius: 3px;
+    font-weight: 500;
+    border: 2px solid rgb(254 252 232);
+    color: rgb(254 252 232);
+    transition: 1s;
+    z-index:999;
+  }
+
+  .btn-theme:hover, .btn-info:hover, .btn-change-edition:hover{
+    background: rgb(254 252 232);
+    color: rgba(19,17,24,1);
+  }
+</style>

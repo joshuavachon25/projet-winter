@@ -1,0 +1,33 @@
+---
+const {titre, image} = Astro.props
+---
+
+<div class="hero h-96 bg-center rounded-t-md" style=`z-index:0!important; background-image: url(${image});`>
+  <div class="overlay bg-opacity-60"></div>
+  <div class="h-full text-center text-neutral-content ">
+    <div class="flex flex-col justify-center items-center h-full">
+      <h1 class="text-4xl font-bold text-gray-100 mb-0 px-20">{titre}</h1>
+    </div>
+  </div>
+</div>
+
+<style>
+  .hero{
+    display: grid;
+    width: 100%;
+    place-items: center;
+    background-size: cover;
+    background-position: center;
+  }
+  .hero>*{
+    grid-column-start: 1;
+    grid-row-start: 1;
+  }
+  .overlay{
+    grid-column-start: 1;
+    grid-row-start: 1;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0,0,0,0.7);
+  }
+</style>
