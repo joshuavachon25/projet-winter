@@ -1,0 +1,38 @@
+---
+layout: ../../layouts/Article22.astro
+title: ''
+---
+import Header from '../../components/Header.astro';
+import Chapeau from '../../components/Chapeau.astro';
+import Cols3img from '../../components/Cols3img.astro';
+import Text from '../../components/Text.astro';
+import Chapitres from '../../components/Chapitres.astro';
+
+<Header titre="" image="/assets/img/"/>
+  
+<Text>
+<h3>Méthodologie</h3>
+</Text>
+<Chapitres 
+  description=""
+  chapitres={
+    [
+      {label: "Évolution démographique - Présentation", url: "/2022/evolution-penale-1", current: true},
+      {label: "Dénominations religieuses", url: "/2022/evolution-penale-2"},
+      {label: "Genre et emprisonnement", url: "/2022/evolution-penale-3"}
+    ]
+  }
+/>
+
+<div class="p-24 py-12 text-sm bg-gray-400">
+  <h3>Médiagraphie</h3>
+  <h4>Sources</h4>
+ 
+<h4>Images</h4>
+
+<h4>Références</h4>
+
+<h4>Pour aller plus loin</h4>
+
+
+</div>
