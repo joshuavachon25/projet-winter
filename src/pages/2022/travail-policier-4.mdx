@@ -1,6 +1,6 @@
 ---
 layout: ../../layouts/Article22.astro
-title: ''
+title: 'Le crime ne dort jamais'
 ---
 import Header from '../../components/Header.astro';
 import Chapeau from '../../components/Chapeau.astro';
@@ -8,32 +8,63 @@ import Cols3img from '../../components/Cols3img.astro';
 import Text from '../../components/Text.astro';
 import Chapitres from '../../components/Chapitres.astro';
 
-<Header titre="" image="/assets/img/"/>
+<Header titre="Le crime ne dort jamais" image="/assets/img/photo-1605866756747-c06a83b3f6c6.avif"/>
   
 <Text>
-<h3>Méthodologie</h3>
+<blockquote>Au tournant du 20e siècle, Sherbrooke est en pleine mutation. La population ne cesse de croître et l’arrivée d’entreprises importantes contribue à dynamiser l’économie. Par contre, le crime aussi foisonne, et ce, tant sous le soleil que sous la lune. Quel portrait pouvons-nous dresser des interventions policières de jour et de nuit entre 1895 et 1920?</blockquote>
+
+bf295b39-50f5-4f1d-82cd-fc72e2c6339b.jpg
+
+C’est à cette question que nous avons tenté de répondre.
+
+En compilant les rapports de police obtenus dans les Day Books, nous avons dressé un inventaire des arrestations effectuées pour les mois de janvier, de juin et d’octobre pour les années 1895 et 1920. Nous avons ensuite regroupé les différents motifs d’arrestations notés par les policiers en catégories générales (d'ailleurs fortement inspirées de celles créées par le professeur Donald Fyson[1]). Au passage, nous avons séparé les crimes survenus entre 22h et 5h des autres crimes. Le tout nous a permis de dresser un portrait global du crime de jour et de nuit à Sherbrooke.
+
+Et les résultats obtenus sont plutôt surprenants.
+
+<h3>Les crimes diurnes, une tendance à la mode</h3>
+Si le stéréotype veut que le crime soit un phénomène nocturne,  force est de constater que ce n’est pas le cas à Sherbrooke durant les années 1895 et 1920. Au contraire, même; pas moins des deux tiers des crimes commis le sont le jour, soit entre 5h et 22h. Cette tendance tend même à s’accentuer au tournant du 20e siècle; en 1920, ce ne sont pas moins des trois quarts des crimes qui sont commis le jour, alors que la part des crimes de nuit dans l’activité criminelle de la ville, elle, baisse de façon marquée. Malgré tout, si le nombre de crimes de jour commis, pour les mois compilés, passe de 29 à 70 en 25 ans, le nombre de crimes de nuit n’en continue pas moins d’augmenter; il passe de 16 à 22. La nuit, les policiers ne chôment pas!
+
+**** Interventions policières de jour et de nuit pour activités criminelles, 1895
+
+Si le stéréotype veut que le crime soit un phénomène nocturne, force est de constater que ce n’est pas le cas à Sherbrooke en 1895. Au contraire, même; pas moins des deux tiers des crimes commis le sont le jour, soit entre 5h et 22h. Cette tendance tend même à s’accentuer au tournant du 20e siècle; en 1920, ce ne sont pas moins des trois quarts des crimes qui sont commis le jour. Malgré tout, si le nombre de crimes de jour commis, pour les mois compilés, passe de 29 à 70 en 25 ans, le nombre de crimes de nuit n’en continue pas moins d’augmenter; il passe de 16 à 22. La nuit, les policiers ne chôment pas!
+
+**** Interventions policières de jour et de nuit pour activités criminelles, 1920
+
+<h3>La criminalité, un phénomène en plein essor</h3>
+
+Les données compilées permettent également de constater que, de tous les types de crimes commis dans la ville, troubler l’ordre public est, de loin, le plus populaire, tant de jour que de nuit, en 1895 comme en 1920. Par rapport à lui, les autres types de crimes demeurent marginaux ― trop, en tout cas, pour pouvoir établir une réelle comparaison, dans notre étude, entre l'occurrence de ces infractions durant le jour et durant la nuit. En tout cas, ce qui est sûr, c’est que la fréquence des interventions policières pour des individus troublant l’ordre public témoigne de la très grande importance de la question du maintien de la paix publique ― les individus arrêtés étant très souvent en état d'ébriété ― alors que le Québec est plongé en plein débat sur la prohibition[2].
+
+**** Nombre d'interventions policières diurnes et nocturnes selon les types de crimes, 1895 et 1920
+
+
+<h3>En conclusion...</h3>
+Au final, on peut en conclure que la criminalité à Sherbrooke, comme ailleurs au Québec, connaît une ascension marquée. Celle-ci, cependant, demeure plus importante dans le cas des crimes de jour que des crimes de nuit. Malgré tout, les interventions policières liées aux actes criminels sont, en 1895 comme en 1920, fortement dominées par des arrestations pour trouble de l’ordre public. Comme quoi l'alcool et le soleil font aussi bon ménage que l'alcool et la lune!
 </Text>
 <Chapitres 
   description=""
   chapitres={
     [
-      {label: " - Présentation", url: "/2022/-1", current: true},
-      {label: "", url: "/2022/-2"},
-      {label: "", url: "/2022/-3"},
-      {label: "", url: "/2022/-4"},
+      {label: "Travail policier - Présentation", url: "/2022/travail-policier-1"},
+      {label: "Les meilleurs endroits pour commettre un crime", url: "/2022/travail-policier-2"},
+      {label: "Arrestations et la prison", url: "/2022/travail-policier-3"},
+      {label: "Le crime ne dort jamais", url: "/2022/travail-policier-4", current: true},
     ]
   }
 />
 
 <div class="p-24 py-12 text-sm bg-gray-400">
   <h3>Médiagraphie</h3>
-  <h4>Sources</h4>
- 
 <h4>Images</h4>
+Eastern Townships Archives Portal, Fonds P020 - Foundation du patrimoine des Cantons-de-l’Est, série 003, sous-série 06, dossier D003a, pièce P982, photographie de Sherbrooke Fire House (1890?).
 
 <h4>Références</h4>
+[1] Donald Fyson, « The Judicial Prosecution of Crime in the Longue Durée. Québec, 1712-1965 », dans Jean-Marie Fecteau et Janice Harvey, dir., La régulation sociale entre l’acteur et l'institution. Pour une problématique historique de l’interaction, Québec, Presses de l’Université du Québec, 2005, p. 85-119.
+
+[2] Jean-Pierre Kesteman, Peter Southam et Diane Saint-Pierre, Histoire des Cantons-de-l’Est, Sainte-Foy, Institut québécois de recherche sur la culture, 1998, p. 184.
 
 <h4>Pour aller plus loin</h4>
+Fortin, Jean-Guy, La police au Québec: une histoire de quatre siècles, Val-d’Or, D’ici et d’ailleurs, 1997, 207 p.
 
+Proulx, Daniel, Juges, policiers et truands: les dessous de la justice au Québec, Montréal, Méridien, 1999, 193 p.
 
 </div>
