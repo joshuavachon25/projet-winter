@@ -3,20 +3,20 @@ import Accueil from '../../layouts/Accueil.astro';
 ---
 
 <Accueil title="Projet-Winter - Choisissez votre édition">
-  <a href="/2022" class="btn-change-edition">Retour au menu</a>
+  <a href="/2022" class="btn-change-edition">Retour</a>
 	<main class="w-full min-h-screen ">
     <header class="w-full h-screen"></header>
     <aside>
       <h3 class="text-2xl font-bold text-yellow-100 uppercase">Édition 2022</h3>
-      <h1 class="text-9xl font-bold text-yellow-50 uppercase">Winter</h1>
-      <div class="bg-white bg-opacity-60 p-10 w-1/2 text-justify flex flex-col gap-4 mt-10 rounded-md shadow-2xl">
+      <h1 class="text-6xl font-bold text-yellow-50 uppercase">Winter</h1>
+      <div class="bg-white bg-opacity-60 p-10 lg:w-1/2 text-justify flex flex-col gap-4 mt-10 rounded-md shadow-2xl">
         <p>Le Projet Winter est issu d'une école d'été organisée conjointement entre le Département d'histoire de l'Université de Sherbrooke et le programme Histoire et civilisation du Cégep de Sherbrooke.</p>
         <p>Durant une semaine de cours intensive, dix étudiant.e.s de l'université et huit étudiant.e.s du collégial ont travaillé de concert pour mettre en lumière l'histoire de la prison Winter.</p>
         <p>En dépouillant les registres d'écrou de la prison, les rapports de la police sherbrookoise et la presse locale, ils ont exploré plusieurs facettes de cette histoire: la prise en charge de la criminalité féminine, la médiatisation des crimes graves, les divergences entre le crime urbain et rural, ainsi que le monde du personnel de la prison.</p>
         <p>Les données publiées ici sont les résultats acquis par cette recherche en archives.</p>
         <p>Elles sont une incursion unique dans l'univers carcéral et nous laissent voir Sherbrooke derrière les barreaux.</p>
       </div>
-      <div class="grid grid-cols-8 bg-white items-center justify-center gap-10 p-10 mt-10 rounded-md">
+      <div class="grid grid-cols-2 lg:grid-cols-8 bg-white items-center justify-center gap-10 p-10 mt-10 rounded-md">
         <img src="/assets/logo/banq.png" alt="">
         <img src="/assets/logo/cegep.png" alt="">
         <img src="/assets/logo/hm.png" alt="">
@@ -26,7 +26,7 @@ import Accueil from '../../layouts/Accueil.astro';
         <img src="/assets/logo/sauvegarde.png" alt="">
         <img src="/assets/logo/uds.png" alt="">
       </div>
-      <div class="bg-white bg-opacity-60 p-10 w-1/2 flex flex-col gap-4 mt-10 rounded-md shadow-2xl  text-center">
+      <div class="bg-white bg-opacity-60 p-10 lg:w-1/2 flex flex-col gap-4 mt-10 rounded-md shadow-2xl  text-center">
         <h2 class="text-2xl font-bold">Participants et participantes</h2>
         <h4 class="text-xl font-bold">Personnel enseignant</h4>
         <ul>
@@ -54,23 +54,10 @@ import Accueil from '../../layouts/Accueil.astro';
 <ul>
 
 </ul>
-
-
-
-
-
-
-
-
-
-
-
-
-
       </div>
     </aside>
   </main>
-  <a href="/2022" class="btn-info">Voir l'édition 2022</a>
+  <a href="/2020" class="btn-info">Voir 2020</a>
 </Accueil>
 
 <style>
@@ -80,7 +67,7 @@ body{
 }
 
  main{
-  background: rgba(19,17,24,1);
+  background: #1f1d1b;
   position: fixed;
   overflow-x: hidden;
  }
@@ -104,6 +91,7 @@ body{
     flex-direction: column;
     align-items: center;
     padding: 9%;
+    @apply pt-20;
   }
 
   .btn-theme{

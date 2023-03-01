@@ -45,7 +45,6 @@ const { frontmatter } = Astro.props;
     background-image: url('/assets/bg1.png');
     background-repeat: no-repeat;
     background-size: cover;
-
     filter: opacity(0.05); 
   }
 
@@ -88,14 +87,13 @@ const { frontmatter } = Astro.props;
     top:0;
     left:0;
     width: 100%;
-
     display: flex;
     justify-content: center;
   }
 
   .content{
+    @apply w-full lg:w-1/2;
     background: rgb(231, 231, 231);
-    width: 50vw;
     height: min-content;
     margin: 150px 0px;
   }

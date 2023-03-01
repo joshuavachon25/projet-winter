@@ -5,7 +5,7 @@ const {description, chapitres} = Astro.props
 <div class="px-10 py-5 pb-8 text-justify text-white bg-black">
   <h4 class="text-white">Autres sections de la thématique</h4>
   <p>{description}</p>
-  <div class="grid grid-cols-2 gap-2">
+  <div class="grid grid-cols-1 lg:grid-cols-2 gap-2">
     {chapitres.map((chapitre) => (
       <a href={chapitre.current ? '#' : chapitre.url} class={chapitre.current ? 'btn-current' : 'btn-info'}>
         {chapitre.label}
