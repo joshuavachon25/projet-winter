@@ -4,6 +4,7 @@ import Accueil from '../../layouts/Accueil.astro';
 
 <Accueil title="Projet-Winter - Choisissez votre édition">
   <a href="/2022" class="btn-change-edition">Voir édition 2022</a>
+ 
 	<main class="w-full min-h-screen">
     <header class="w-full h-screen"></header>
     <aside>
@@ -24,12 +25,18 @@ import Accueil from '../../layouts/Accueil.astro';
   
  main{
   background: rgba(19,17,24,1);
+  position: fixed;
+  overflow: auto;
  }
 
   header{
+    @apply h-screen;
+    position:sticky;
+    top:0;
     background-image: url('/assets/bg1.png');
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
     filter: opacity(0.05); 
   }
 
@@ -37,12 +44,13 @@ import Accueil from '../../layouts/Accueil.astro';
     position: absolute;
     top: 0;
     left:0;
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    //height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 9%;
+    padding-bottom: 50px;
     @apply pt-20;
   }
 
@@ -60,7 +68,7 @@ import Accueil from '../../layouts/Accueil.astro';
 
   .btn-info{
     position: absolute;
-    right: 10px;
+    right: 20px;
     top: 10px;
     text-align: center;
     margin-bottom: 10px;
@@ -74,7 +82,7 @@ import Accueil from '../../layouts/Accueil.astro';
 
   .btn-change-edition{
     position:absolute;
-    left: 10px;
+    left: 20px;
     top:10px;
     text-align: center;
     margin-bottom: 10px;
