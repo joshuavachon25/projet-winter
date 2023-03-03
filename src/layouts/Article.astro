@@ -14,8 +14,21 @@ const { frontmatter } = Astro.props;
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="generator" content={Astro.generator} />
-		<title>{frontmatter.title}</title>
+		<title>{title}</title>
+    <meta name="generator" content={Astro.generator} />
+    <meta name="author" content="Université de Sherbrooke" />
+    <meta name="author" content="Cégep de Sherbrooke" />
+    <meta name="author" content="Joshua Vachon" />
+    <meta name="description" content={frontmatter.description}>
+    <meta name="keywords" content="prison, sherbrooke, archives, prison winter, université de sherbrooke, cégep de sherbrooke, histoire, criminologie, histoire carcérale">
+    <meta property="og:title" content={title} />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={new URL(Astro.url)} />
+    <meta property="og:image" content={new URL(`/assets/img/main_thumb.png`, Astro.url)} />
+    <meta name="twitter:title" content={title}>
+    <meta name="twitter:description" content={frontmatter.description}>
+    <meta name="twitter:image" content={new URL(`/assets/img/main_thumb.png`, Astro.url)}>
+    <meta name="twitter:card" content="summary_large_image">
 	</head>
 	<body>
     <a href="/2022" class="btn-change-edition">Voir édition 2022</a>
